@@ -82,7 +82,7 @@ fi
 # Change vhost to no fastcgi cache.
 configName=$domain
 cd $sitesAvailable
-wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/vhost-nocache -O $domain
+wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/vhost-nocache -O $domain
 sed -i "s/domain.com/$domain/g" $sitesAvailable$configName
 
 # Intstall RianLoop
