@@ -198,7 +198,7 @@ end=$'\e[0m'
     sleep 2
     rm -rf /etc/nginx/nginx.conf 
     cd /etc/nginx/
-    wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/nginx.conf?token=AOZC7LJXCFVZYYRQS4DJYPC6TPKL2 -O nginx.conf 
+    wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/nginx.conf -O nginx.conf 
     dos2unix /etc/nginx/nginx.conf 
     cd
     echo ""
@@ -230,7 +230,7 @@ sleep 1
     echo "${grn}Configuring to make PHP-FPM working with Nginx ...${end}"
     echo ""
     sleep 3
-    php7_dotdeb="https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/php7dotdeb?token=AOZC7LJZGTLGFSVRYEDDPE26TPKL4"
+    php7_dotdeb="https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/php7dotdeb"
     wget -q $php7_dotdeb -O /etc/php/7.4/fpm/pool.d/$domain.conf 
     sed -i "s/domain.com/$domain/g" /etc/php/7.4/fpm/pool.d/$domain.conf
     echo "" >> /etc/php/7.4/fpm/pool.d/$domain.conf
@@ -246,7 +246,7 @@ sleep 1
 
      # Menu Script
     cd
-    wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/menu.sh?token=AOZC7LJRNKDCBCL5ATDLDJ26TPKLY -O menu.sh 
+    wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/menu.sh -O menu.sh 
     dos2unix menu.sh 
     chmod +x menu.sh
 
