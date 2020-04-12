@@ -81,7 +81,7 @@ end=$'\e[0m'
     wget http://nginx.org/keys/nginx_signing.key
     apt-key add nginx_signing.key
     apt update
-    apt-get install nginx
+    apt-get install nginx -y
 
         # Configure PHP FPM
     sed -i "s/max_execution_time = 30/max_execution_time = 360/g" /etc/php/7.4/fpm/php.ini
@@ -114,13 +114,13 @@ end=$'\e[0m'
     PHP_VERSION=$(php -r "echo PHP_MAJOR_VERSION.'.'.PHP_MINOR_VERSION;")
  
     # Download ioncube
-    wget https://downloads.ioncube.com/loader_downloads/ioncube_loaders_lin_x86-64.tar.gz 
-    tar -xvzf ioncube_loaders_lin_x86-64.tar.gz 
-    rm -f ioncube_loaders_lin_x86-64.tar.gz 
+    wget https://www.ioncube.com/php-7.4.0-beta-loaders/ioncube_loaders_lin_x86-64_7.4_BETA2.tar.gz
+    tar -xvzf ioncube_loaders_lin_x86-64_7.4_BETA2.tar.gz
+    rm -f ioncube_loaders_lin_x86-64_7.4_BETA2.tar.gz 
     # Copy files to modules folder
-    sudo cp "ioncube/ioncube_loader_lin_${PHP_VERSION}.so" $MODULES 
-    echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}.so" >> /etc/php/7.4/fpm/php.ini
-    echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}.so" >> /etc/php/7.4/cli/php.ini
+    sudo cp "ioncube/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" $MODULES 
+    echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" >> /etc/php/7.4/fpm/php.ini
+    echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" >> /etc/php/7.4/cli/php.ini
 
     rm -rf ioncube
     systemctl restart php7.4-fpm.service 
