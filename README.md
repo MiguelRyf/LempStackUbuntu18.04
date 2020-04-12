@@ -34,7 +34,7 @@ What things you need to make sure before proceed.
 To Install this script, all you need to do is to run a single command line and it will install everything.
 
 ```
-apt update; apt-get install dos2unix; wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/lemp-ubuntu-18.04.sh?token=AOZC7LLPKX3WK2DHZFV7U326TPKLU -O ~/lemp-ubuntu-18.04.sh && dos2unix ~/lemp-ubuntu-18.04.sh && bash ~/lemp-ubuntu-18.04.sh
+apt update; apt-get install dos2unix; wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/lemp-ubuntu-18.04.sh -O ~/lemp-ubuntu-18.04.sh && dos2unix ~/lemp-ubuntu-18.04.sh && bash ~/lemp-ubuntu-18.04.sh
 
 ```
 
