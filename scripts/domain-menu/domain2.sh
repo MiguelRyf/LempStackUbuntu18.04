@@ -197,4 +197,4 @@ echo ""
   echo ""
  
 rm -f /root/domain2.sh
-exith
+exit
