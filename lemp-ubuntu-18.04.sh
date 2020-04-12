@@ -118,7 +118,7 @@ end=$'\e[0m'
     tar -xvzf ioncube_loaders_lin_x86-64_7.4_BETA2.tar.gz
     rm -f ioncube_loaders_lin_x86-64_7.4_BETA2.tar.gz 
     # Copy files to modules folder
-    sudo cp "ioncube/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" $MODULES 
+    sudo cp "ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" $MODULES 
     echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" >> /etc/php/7.4/fpm/php.ini
     echo "zend_extension=$MODULES/ioncube_loader_lin_${PHP_VERSION}_10.4.0_beta2.so" >> /etc/php/7.4/cli/php.ini
 
