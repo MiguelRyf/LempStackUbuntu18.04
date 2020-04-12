@@ -126,10 +126,10 @@ end=$'\e[0m'
     systemctl restart php7.4-fpm.service 
     systemctl restart nginx 
 
-    # Mcrypt
-    apt-get install php-dev libmcrypt-dev php-pear -y 
-    pecl channel-update pecl.php.net 
-    apt-get install mcrypt php7.4-mcrypt -y 
+    # Mcrypt 
+    apt-get -y install gcc make autoconf libc-dev pkg-config
+    apt-get -y install libmcrypt-dev
+    yes | pecl install mcrypt-1.0.2
     systemctl restart php7.4-fpm.service 
     systemctl restart nginx 
     echo ""
