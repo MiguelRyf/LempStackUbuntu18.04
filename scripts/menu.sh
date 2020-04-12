@@ -70,33 +70,33 @@ read -p "Choose your option [1-11]: " choice
       sub_menu2;
       ;;
   
-      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/main-menu/show-domain.sh -O ~/show-domain.sh && dos2unix ~/show-domain.sh && bash ~/show-domain.sh;
+      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/main-menu/show-domain.sh -O ~/show-domain.sh && dos2unix ~/show-domain.sh && bash ~/show-domain.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
 
-      4) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/database-menu/show-databases.sh -O ~/show-databases.sh && dos2unix ~/show-databases.sh && bash ~/show-databases.sh;
+      4) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/database-menu/show-databases.sh -O ~/show-databases.sh && dos2unix ~/show-databases.sh && bash ~/show-databases.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
 
-      5) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/addons/rainloop.sh -O ~/rainloop.sh && dos2unix ~/rainloop.sh && bash ~/rainloop.sh;
+      5) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/addons/rainloop.sh -O ~/rainloop.sh && dos2unix ~/rainloop.sh && bash ~/rainloop.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
 
-      6) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/addons/filerun.sh -O ~/filerun.sh && dos2unix ~/filerun.sh && bash ~/filerun.sh;
+      6) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/addons/filerun.sh -O ~/filerun.sh && dos2unix ~/filerun.sh && bash ~/filerun.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
 
-   7) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/main-menu/change-port-sshd.sh -O ~/changeportssh.sh && dos2unix ~/changeportssh.sh && bash ~/changeportssh.sh;
+   7) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/main-menu/change-port-sshd.sh -O ~/changeportssh.sh && dos2unix ~/changeportssh.sh && bash ~/changeportssh.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
 
    8)   clear;
-            systemctl restart php7.0-fpm.service;
+            systemctl restart php7.4-fpm.service;
             systemctl restart nginx;
             echo "${cyn}Server Refreshed!${end}";
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
@@ -110,7 +110,7 @@ read -p "Choose your option [1-11]: " choice
           main_menu;
           ;;
 
-   10) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/main-menu/restart-server.sh -O ~/restart-server.sh && dos2unix ~/restart-server.sh && bash ~/restart-server.sh;
+   10) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/main-menu/restart-server.sh -O ~/restart-server.sh && dos2unix ~/restart-server.sh && bash ~/restart-server.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           main_menu;
           ;;
@@ -183,37 +183,37 @@ read -p "Choose your option [1-9]: " submenudomain
     else
       case $submenudomain in
 
-      1) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/domain1.sh -O ~/domain1.sh && dos2unix ~/domain1.sh && bash ~/domain1.sh;
+      1) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/domain1.sh -O ~/domain1.sh && dos2unix ~/domain1.sh && bash ~/domain1.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
       sub_menu1;
             ;;
 
-      2) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/domain2.sh -O ~/domain2.sh && dos2unix ~/domain2.sh && bash ~/domain2.sh;
+      2) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/domain2.sh -O ~/domain2.sh && dos2unix ~/domain2.sh && bash ~/domain2.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
       sub_menu1;
             ;;
 
-      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/domain3.sh -O ~/domain3.sh && dos2unix ~/domain3.sh && bash ~/domain3.sh;
+      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/domain3.sh -O ~/domain3.sh && dos2unix ~/domain3.sh && bash ~/domain3.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu1;
           ;;
 
-      4) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/domain4.sh -O ~/domain4.sh && dos2unix ~/domain4.sh && bash ~/domain4.sh;
+      4) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/domain4.sh -O ~/domain4.sh && dos2unix ~/domain4.sh && bash ~/domain4.sh;
       read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu1;
           ;;
 
-      5) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/main-menu/show-domain.sh -O ~/show-domain.sh && dos2unix ~/show-domain.sh && bash ~/show-domain.sh;
+      5) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/main-menu/show-domain.sh -O ~/show-domain.sh && dos2unix ~/show-domain.sh && bash ~/show-domain.sh;
       read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu1;
           ;;
 
-      6) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/delete.sh -O ~/delete.sh && dos2unix ~/delete.sh && bash ~/delete.sh;
+      6) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/delete.sh -O ~/delete.sh && dos2unix ~/delete.sh && bash ~/delete.sh;
       read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu1;
           ;;
 
-   7) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/domain-menu/backupwebdata.sh -O ~/backupwebdata.sh && dos2unix ~/backupwebdata.sh && bash ~/backupwebdata.sh;
+   7) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/domain-menu/backupwebdata.sh -O ~/backupwebdata.sh && dos2unix ~/backupwebdata.sh && bash ~/backupwebdata.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu1;
           ;;
@@ -279,17 +279,17 @@ read -p "Choose your option [1-5]: " submenudomain2
     else
       case $submenudomain2 in
 
-    1) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/database-menu/create-database.sh -O ~/create-database.sh && dos2unix ~/create-database.sh && bash ~/create-database.sh;
+    1) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/database-menu/create-database.sh -O ~/create-database.sh && dos2unix ~/create-database.sh && bash ~/create-database.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu2;
           ;;
 
-    2) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/database-menu/delete-database.sh -O ~/delete-database.sh && dos2unix ~/delete-database.sh  && bash ~/delete-database.sh;
+    2) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/database-menu/delete-database.sh -O ~/delete-database.sh && dos2unix ~/delete-database.sh  && bash ~/delete-database.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu2;
           ;;
 
-      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu16.04/master/scripts/database-menu/show-databases.sh -O ~/show-databases.sh && dos2unix ~/show-databases.sh && bash ~/show-databases.sh;
+      3) wget https://raw.githubusercontent.com/MiguelRyf/LempStackUbuntu18.04/master/scripts/database-menu/show-databases.sh -O ~/show-databases.sh && dos2unix ~/show-databases.sh && bash ~/show-databases.sh;
             read -p "${grn}Press [Enter] key to continue...${end}" readEnterKey;
           sub_menu2;
           ;;
