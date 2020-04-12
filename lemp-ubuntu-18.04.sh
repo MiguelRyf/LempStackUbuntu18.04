@@ -129,7 +129,7 @@ end=$'\e[0m'
     # Mcrypt 
     apt-get -y install gcc make autoconf libc-dev pkg-config
     apt-get -y install libmcrypt-dev
-    yes | pecl install mcrypt-1.0.2
+    yes | pecl install mcrypt-1.0.3
     echo "extension=$MODULES/mcrypt.so" >> /etc/php/7.4/fpm/php.ini
     echo "extension=$MODULES/mcrypt.so" >> /etc/php/7.4/cli/php.ini
     systemctl restart php7.4-fpm.service 
