@@ -251,7 +251,7 @@ sleep 1
     chmod +x menu.sh
 
     # Success Prompt
-    #clear
+    clear
     echo "LEMP Auto Installer BY Miguel Emmara `date`"
     echo "*******************************************************************************************"
     echo ""
